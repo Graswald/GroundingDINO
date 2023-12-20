@@ -7,4 +7,3 @@ timm
 numpy
 opencv-python
 supervision
-pycocotools
