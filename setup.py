@@ -23,12 +23,9 @@
 import glob
 import os
 import subprocess
+subprocess.run(["pip", "install", "-r", "requirements.txt"])
 
-try:
-    import torch
-except:
-    subprocess.run(["pip3", "install", "torch"])
-
+import torch
 from setuptools import find_packages, setup
 from torch.utils.cpp_extension import CUDA_HOME, CppExtension, CUDAExtension
 
