@@ -24,7 +24,11 @@ import glob
 import os
 import subprocess
 
-import torch
+try:
+    import torch
+except:
+    subprocess.run(['pip', 'install', 'toch'])
+
 from setuptools import find_packages, setup
 from torch.utils.cpp_extension import CUDA_HOME, CppExtension, CUDAExtension
 
